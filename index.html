@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title></title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="2113.4">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div style="flex-direction: column;">
+        <h1>Twitter Searcher</h1>
+        <h3>Search tweets <b>from someone</b>, from a <b>certain period of time</b></h3>
+    </div>
+    <div>
+        <input type="text" id="searchfield" placeholder="Username (without the @)">
+        <div style="flex-direction: column;">
+            <h4>From</h4>
+            <select id="yearselect_from">
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+            </select>
+        </div>
+        
+        <div style="flex-direction: column;">
+            <h4>To</h4>
+            <select id="yearselect_to">
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <a class="searchbutton" id="searchbutton" onclick="Search()">Search</a>
+    </div>
+    <div>
+        <p style="color: red; display: none;" id="errormsg">Username cannot be empty, and years cannot be the same!</p>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>
